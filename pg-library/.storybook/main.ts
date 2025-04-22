@@ -13,6 +13,9 @@ const config: StorybookConfig = {
   "framework": {
     "name": "@storybook/angular",
     "options": {}
-  }
+  },
+  docs: {
+    defaultName: "Docs",
+  },
 };
 export default config;

@@ -34,7 +34,7 @@ export class ButtonComponent {
    * @required
    */
   @Input()
-  label = 'Button'; 
+  label = 'Example'; 
 
   /** Optional click handler */
   @Output()

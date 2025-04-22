@@ -2,14 +2,15 @@
   display: inline-block;
   cursor: pointer;
   border: 0;
-  border-radius: 3em;
+  border-radius: 4px;
   font-weight: 700;
   line-height: 1;
+  padding: 5em 2.5em;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .storybook-button--primary {
-  background-color: #555ab9;
-  color: white;
+  background-color: #ffd41c;
+  color: #000;
 }
 .storybook-button--secondary {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;

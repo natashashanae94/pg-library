@@ -1,0 +1,17 @@
+import { Title, Meta, Primary, Controls, Story, Canvas } from '@storybook/blocks';
+import * as ButtonStories from '../Button/button.stories';
+
+<Meta of={ ButtonStories } />
+
+<Title>Button</Title>  
+<Canvas sourceState="none" of={ButtonStories.Primary} ></Canvas>
+<Controls></Controls>
+
+## Implementation
+NOTE: The actual Rebelmouse-specific code snippets below can only be used within the Rebelmouse web building system!  The Angular templates here are only meant for visual demonstration purposes, and the ability to copy that code will be marked unavailable for this library. 
+
+```html
+    <a class="btn btn-primary-yellow" href="{{node.attrs.button_link}}">{{node.attrs.button_text}}</a>
+```
+
+The buttons shown here represent various sizes that will be applied to only specific scale-based interactions determined by the size of the viewport.

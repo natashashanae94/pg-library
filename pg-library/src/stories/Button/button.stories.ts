@@ -6,21 +6,18 @@ import { ButtonComponent } from './button.component';
 const meta: Meta<ButtonComponent> = {
   title: 'Example/Button',
   component: ButtonComponent,
-  tags: ['autodocs'],
-  // parameters: {
-  //   docs: {
-  //     source: {
-  //       code: null,
-  //     },
-  //   },
-  // },
+  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
+  args: { onClick: fn()},
   argTypes: {
     backgroundColor: {
       control: 'color',
     },
   },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
+  parameters: {
+    docs: {
+      page: null,
+    },
+  },
 };
 
 export default meta;
@@ -30,26 +27,26 @@ type Story = StoryObj<ButtonComponent>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button',
+    label: 'Example',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: 'Example',
   },
 };
 
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
+    label: 'Example',
   },
 };
 
 export const Small: Story = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Example',
   },
 };
